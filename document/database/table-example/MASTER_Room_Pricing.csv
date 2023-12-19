@@ -1,0 +1,7 @@
+id,created_at,updated_at,room_type_id,duration_day,price
+1,,,1,1,500
+2,,,2,1,800
+3,,,2,3,1200
+4,,,3,1,1500
+5,,,3,3,2500
+6,,,3,7,8000
