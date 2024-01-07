@@ -1,0 +1,28 @@
+sequenceDiagram
+    FRONT->>+BACK: send room reserving request
+    alt invalid authentication
+        BACK-->>FRONT: response error code 401 Unauthorized
+    else invalid input
+        BACK-->>FRONT: response error code 400 Bad Request
+    else valid
+        BACK->>+DATABASE: get room pricing master data
+        DATABASE->>-BACK: room pricing master data
+        BACK->>BACK:calculate duration_day
+        BACK->>BACK:calculate pricing
+        BACK->>+DATABASE: send insert query
+        alt room_id not exist
+            DATABASE-->>BACK:sql error code -121
+            BACK-->>FRONT: response error code 400 Bad Request
+        else room_price_id not exist
+            DATABASE-->>BACK:sql error code -121
+            BACK-->>FRONT: response error code 400 Bad Request
+        else room not available
+            DATABASE-->>BACK:sql error code 5000
+            BACK-->>FRONT: response error code 409 room not available
+        else valid
+            DATABASE->>DATABASE: calculate invoice_amount
+            DATABASE->>DATABASE: insert data to TRANS_Room and TRANS_Room_Date_Pricing
+            DATABASE-->>-BACK: inserted data
+            BACK-->>-FRONT: room reserved
+        end
+    end

@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -478.8888698595576,
-    "scrollLeft": -28.333332207465784,
-    "zoomLevel": 0.9,
+    "scrollTop": -400.6666666666668,
+    "scrollLeft": -400.6666666666669,
+    "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -43,13 +43,15 @@
   "table": {
     "tables": [
       {
+        "id": "0e409295-0d06-4c4e-83cb-c7653912bf1b",
         "name": "MASTER_Room_Type",
         "comment": "type of room",
         "columns": [
           {
+            "id": "e620e970-0e96-4c67-8fee-8bf64696b8fc",
             "name": "id",
             "comment": "",
-            "dataType": "INT",
+            "dataType": "uniqueidentifier",
             "default": "",
             "option": {
               "autoIncrement": true,
@@ -64,12 +66,12 @@
               "pfk": false,
               "widthName": 60,
               "widthComment": 60,
-              "widthDataType": 60,
+              "widthDataType": 90.17529296875,
               "widthDefault": 60
-            },
-            "id": "e620e970-0e96-4c67-8fee-8bf64696b8fc"
+            }
           },
           {
+            "id": "2de17aa7-f221-40fb-818a-2bcd18bc90f4",
             "name": "created_at",
             "comment": "",
             "dataType": "timestamp",
@@ -89,10 +91,10 @@
               "widthComment": 60,
               "widthDataType": 61.9599609375,
               "widthDefault": 60
-            },
-            "id": "2de17aa7-f221-40fb-818a-2bcd18bc90f4"
+            }
           },
           {
+            "id": "aa6f4ee8-fef8-4670-9b0f-1411b44e9428",
             "name": "updated_at",
             "comment": "",
             "dataType": "timestamp",
@@ -112,10 +114,10 @@
               "widthComment": 60,
               "widthDataType": 61.9599609375,
               "widthDefault": 60
-            },
-            "id": "aa6f4ee8-fef8-4670-9b0f-1411b44e9428"
+            }
           },
           {
+            "id": "ce6eb7a4-41cd-4f28-baae-a43dbc83aa4a",
             "name": "name",
             "comment": "",
             "dataType": "VARCHAR(50)",
@@ -135,10 +137,10 @@
               "widthComment": 60,
               "widthDataType": 87.71875,
               "widthDefault": 60
-            },
-            "id": "ce6eb7a4-41cd-4f28-baae-a43dbc83aa4a"
+            }
           },
           {
+            "id": "2eb62f86-6924-4e12-aea7-8d59af993b77",
             "name": "description",
             "comment": "",
             "dataType": "VARCHAR(MAX)",
@@ -158,26 +160,26 @@
               "widthComment": 60,
               "widthDataType": 101.4296875,
               "widthDefault": 60
-            },
-            "id": "2eb62f86-6924-4e12-aea7-8d59af993b77"
+            }
           }
         ],
         "ui": {
           "active": false,
           "left": 42.9013,
           "top": 58.0091,
-          "zIndex": 5,
+          "zIndex": 46,
           "widthName": 133.49169921875,
           "widthComment": 74.25537109375
         },
-        "visible": true,
-        "id": "0e409295-0d06-4c4e-83cb-c7653912bf1b"
+        "visible": true
       },
       {
+        "id": "50795fac-dfd5-43a4-bcc5-881be00e9934",
         "name": "MASTER_Room",
         "comment": "list of current room",
         "columns": [
           {
+            "id": "70fe89c0-5cd8-41c2-a35b-a56e4c0d955f",
             "name": "id",
             "comment": "",
             "dataType": "INT",
@@ -197,10 +199,10 @@
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
-            },
-            "id": "70fe89c0-5cd8-41c2-a35b-a56e4c0d955f"
+            }
           },
           {
+            "id": "3868ec33-d024-407d-ad5b-7d4930107661",
             "name": "created_at",
             "comment": "",
             "dataType": "timestamp",
@@ -220,10 +222,10 @@
               "widthComment": 60,
               "widthDataType": 61.9599609375,
               "widthDefault": 60
-            },
-            "id": "3868ec33-d024-407d-ad5b-7d4930107661"
+            }
           },
           {
+            "id": "796bd989-6116-46b6-9e61-a32dab50a0d8",
             "name": "updated_at",
             "comment": "",
             "dataType": "timestamp",
@@ -243,13 +245,13 @@
               "widthComment": 60,
               "widthDataType": 61.9599609375,
               "widthDefault": 60
-            },
-            "id": "796bd989-6116-46b6-9e61-a32dab50a0d8"
+            }
           },
           {
+            "id": "65e9239e-010a-48e8-8a6b-38a20e275685",
             "name": "room_type_id",
             "comment": "",
-            "dataType": "INT",
+            "dataType": "uniqueidentifier",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -264,12 +266,12 @@
               "pfk": false,
               "widthName": 80.76806640625,
               "widthComment": 60,
-              "widthDataType": 60,
+              "widthDataType": 90.17529296875,
               "widthDefault": 60
-            },
-            "id": "65e9239e-010a-48e8-8a6b-38a20e275685"
+            }
           },
           {
+            "id": "97ab7bff-666d-4636-8bea-3ce7ef9d7a4b",
             "name": "room_number",
             "comment": "",
             "dataType": "VARCHAR(50)",
@@ -289,8 +291,7 @@
               "widthComment": 60,
               "widthDataType": 87.71875,
               "widthDefault": 60
-            },
-            "id": "97ab7bff-666d-4636-8bea-3ce7ef9d7a4b"
+            }
           }
         ],
         "ui": {
@@ -301,17 +302,18 @@
           "widthName": 98.078125,
           "widthComment": 109.6435546875
         },
-        "visible": false,
-        "id": "50795fac-dfd5-43a4-bcc5-881be00e9934"
+        "visible": false
       },
       {
+        "id": "8e8dbb27-aa62-4012-a4de-596594bb7f50",
         "name": "MASTER_Room_Pricing",
         "comment": "",
         "columns": [
           {
+            "id": "1b4a71bf-3c3f-439c-91e8-41c5db32e7cf",
             "name": "id",
             "comment": "",
-            "dataType": "INT",
+            "dataType": "uniqueidentifier",
             "default": "",
             "option": {
               "autoIncrement": true,
@@ -326,12 +328,12 @@
               "pfk": false,
               "widthName": 60,
               "widthComment": 60,
-              "widthDataType": 60,
+              "widthDataType": 90.17529296875,
               "widthDefault": 60
-            },
-            "id": "1b4a71bf-3c3f-439c-91e8-41c5db32e7cf"
+            }
           },
           {
+            "id": "d79f5859-93b9-491d-bee3-6c00bfd3a1d8",
             "name": "created_at",
             "comment": "",
             "dataType": "timestamp",
@@ -351,10 +353,10 @@
               "widthComment": 60,
               "widthDataType": 61.9599609375,
               "widthDefault": 60
-            },
-            "id": "d79f5859-93b9-491d-bee3-6c00bfd3a1d8"
+            }
           },
           {
+            "id": "f3aa72f7-6ac8-456c-be18-a8dfcf2fad87",
             "name": "updated_at",
             "comment": "",
             "dataType": "timestamp",
@@ -374,13 +376,13 @@
               "widthComment": 60,
               "widthDataType": 61.9599609375,
               "widthDefault": 60
-            },
-            "id": "f3aa72f7-6ac8-456c-be18-a8dfcf2fad87"
+            }
           },
           {
+            "id": "530d0c08-1296-4fe9-a655-2f32edab4471",
             "name": "room_type_id",
             "comment": "",
-            "dataType": "INT",
+            "dataType": "uniqueidentifier",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -395,12 +397,12 @@
               "pfk": false,
               "widthName": 80.76806640625,
               "widthComment": 60,
-              "widthDataType": 60,
+              "widthDataType": 90.17529296875,
               "widthDefault": 60
-            },
-            "id": "530d0c08-1296-4fe9-a655-2f32edab4471"
+            }
           },
           {
+            "id": "5e25ceaf-32ab-4760-b931-c1a8aade13cd",
             "name": "duration_day",
             "comment": "",
             "dataType": "INT",
@@ -420,10 +422,10 @@
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
-            },
-            "id": "5e25ceaf-32ab-4760-b931-c1a8aade13cd"
+            }
           },
           {
+            "id": "34fc19ed-bd06-4fd3-872c-f8889c3e9d87",
             "name": "price",
             "comment": "price per duration",
             "dataType": "DECIMAL(2,18)",
@@ -443,29 +445,29 @@
               "widthComment": 103.1689453125,
               "widthDataType": 93.7490234375,
               "widthDefault": 60
-            },
-            "id": "34fc19ed-bd06-4fd3-872c-f8889c3e9d87"
+            }
           }
         ],
         "ui": {
-          "active": true,
-          "left": 49.5508,
-          "top": 591.4052,
-          "zIndex": 13,
+          "active": false,
+          "left": 19.5513,
+          "top": 594.7384,
+          "zIndex": 42,
           "widthName": 145.04443359375,
           "widthComment": 60
         },
-        "visible": true,
-        "id": "8e8dbb27-aa62-4012-a4de-596594bb7f50"
+        "visible": true
       },
       {
+        "id": "8aa76fd1-d60b-4619-b80b-620646fd5105",
         "name": "TRANS_Room",
         "comment": "",
         "columns": [
           {
+            "id": "460db5d4-93ce-4aed-9f11-39e05ff862a7",
             "name": "id",
             "comment": "",
-            "dataType": "INT",
+            "dataType": "uniqueidentifier",
             "default": "",
             "option": {
               "autoIncrement": true,
@@ -480,12 +482,12 @@
               "pfk": false,
               "widthName": 60,
               "widthComment": 60,
-              "widthDataType": 60,
+              "widthDataType": 90.17529296875,
               "widthDefault": 60
-            },
-            "id": "460db5d4-93ce-4aed-9f11-39e05ff862a7"
+            }
           },
           {
+            "id": "29799f82-1ebf-42b1-a456-f266993dab10",
             "name": "created_at",
             "comment": "",
             "dataType": "timestamp",
@@ -505,10 +507,10 @@
               "widthComment": 60,
               "widthDataType": 61.9599609375,
               "widthDefault": 60
-            },
-            "id": "29799f82-1ebf-42b1-a456-f266993dab10"
+            }
           },
           {
+            "id": "366a4d3e-20e4-49a7-a42f-f7c52b1e66c9",
             "name": "updated_at",
             "comment": "",
             "dataType": "timestamp",
@@ -528,10 +530,10 @@
               "widthComment": 60,
               "widthDataType": 61.9599609375,
               "widthDefault": 60
-            },
-            "id": "366a4d3e-20e4-49a7-a42f-f7c52b1e66c9"
+            }
           },
           {
+            "id": "e2c59cb3-f7d6-47d9-8b3f-ce58f2257f8d",
             "name": "room_id",
             "comment": "",
             "dataType": "INT",
@@ -551,13 +553,13 @@
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
-            },
-            "id": "e2c59cb3-f7d6-47d9-8b3f-ce58f2257f8d"
+            }
           },
           {
+            "id": "2ac0dcaf-195f-40d1-8b34-d943fab0d560",
             "name": "trans_type_id",
             "comment": "",
-            "dataType": "INT",
+            "dataType": "uniqueidentifier",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -572,12 +574,12 @@
               "pfk": false,
               "widthName": 80.05078125,
               "widthComment": 60,
-              "widthDataType": 60,
+              "widthDataType": 90.17529296875,
               "widthDefault": 60
-            },
-            "id": "2ac0dcaf-195f-40d1-8b34-d943fab0d560"
+            }
           },
           {
+            "id": "2feea205-2aaf-4d90-a8ae-45bccb5cd1af",
             "name": "duration_day",
             "comment": "",
             "dataType": "INT",
@@ -597,10 +599,10 @@
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
-            },
-            "id": "2feea205-2aaf-4d90-a8ae-45bccb5cd1af"
+            }
           },
           {
+            "id": "7fd00ef6-6310-4d2b-ac36-f1a40b73254e",
             "name": "from_date",
             "comment": "",
             "dataType": "DATE",
@@ -620,10 +622,10 @@
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
-            },
-            "id": "7fd00ef6-6310-4d2b-ac36-f1a40b73254e"
+            }
           },
           {
+            "id": "b18c845f-1f47-4bb2-b413-542076e8c463",
             "name": "to_date",
             "comment": "",
             "dataType": "DATE",
@@ -643,29 +645,52 @@
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
+            }
+          },
+          {
+            "id": "76288d67-f365-4d87-8a22-36c527bd90b4",
+            "name": "invoice_amount",
+            "comment": "",
+            "dataType": "DECIMAL(2,18)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
             },
-            "id": "b18c845f-1f47-4bb2-b413-542076e8c463"
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 93.05712890625,
+              "widthComment": 60,
+              "widthDataType": 93.7490234375,
+              "widthDefault": 60
+            }
           }
         ],
         "ui": {
           "active": false,
-          "left": 605.554,
-          "top": 392.3613,
-          "zIndex": 2,
+          "left": 609.7209,
+          "top": 394.028,
+          "zIndex": 44,
           "widthName": 87.96630859375,
           "widthComment": 60
         },
-        "visible": true,
-        "id": "8aa76fd1-d60b-4619-b80b-620646fd5105"
+        "visible": true
       },
       {
+        "id": "a91b88be-96d0-4fe2-a487-ccb95f96edec",
         "name": "MASTER_Transaction_Type",
         "comment": "",
         "columns": [
           {
+            "id": "4ef01031-3eeb-4ebb-ac37-75318b3fedce",
             "name": "id",
             "comment": "",
-            "dataType": "INT",
+            "dataType": "uniqueidentifier",
             "default": "",
             "option": {
               "autoIncrement": true,
@@ -680,12 +705,12 @@
               "pfk": false,
               "widthName": 60,
               "widthComment": 60,
-              "widthDataType": 60,
+              "widthDataType": 90.17529296875,
               "widthDefault": 60
-            },
-            "id": "4ef01031-3eeb-4ebb-ac37-75318b3fedce"
+            }
           },
           {
+            "id": "656a7e21-cec3-4fc7-b774-9beb80b0ae3b",
             "name": "created_at",
             "comment": "",
             "dataType": "timestamp",
@@ -705,10 +730,10 @@
               "widthComment": 60,
               "widthDataType": 61.9599609375,
               "widthDefault": 60
-            },
-            "id": "656a7e21-cec3-4fc7-b774-9beb80b0ae3b"
+            }
           },
           {
+            "id": "bb788f5d-ec03-4a72-bc6c-f03e27d3aa7a",
             "name": "updated_at",
             "comment": "",
             "dataType": "timestamp",
@@ -728,10 +753,10 @@
               "widthComment": 60,
               "widthDataType": 61.9599609375,
               "widthDefault": 60
-            },
-            "id": "bb788f5d-ec03-4a72-bc6c-f03e27d3aa7a"
+            }
           },
           {
+            "id": "fca22fa6-90ce-476b-899f-2d30f51a1878",
             "name": "name",
             "comment": "",
             "dataType": "VARCHAR(50)",
@@ -751,10 +776,10 @@
               "widthComment": 60,
               "widthDataType": 87.71875,
               "widthDefault": 60
-            },
-            "id": "fca22fa6-90ce-476b-899f-2d30f51a1878"
+            }
           },
           {
+            "id": "f5e477c5-9535-44be-b6dc-cdee30a5f790",
             "name": "description",
             "comment": "",
             "dataType": "VARCHAR(MAX)",
@@ -774,10 +799,10 @@
               "widthComment": 60,
               "widthDataType": 101.4296875,
               "widthDefault": 60
-            },
-            "id": "f5e477c5-9535-44be-b6dc-cdee30a5f790"
+            }
           },
           {
+            "id": "66ffdf4d-a4d5-4616-bb9e-7b849fac70aa",
             "name": "isPrice",
             "comment": "",
             "dataType": "BIT",
@@ -797,29 +822,29 @@
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
-            },
-            "id": "66ffdf4d-a4d5-4616-bb9e-7b849fac70aa"
+            }
           }
         ],
         "ui": {
           "active": false,
           "left": 1131.8054,
           "top": 173.612,
-          "zIndex": 1,
+          "zIndex": 48,
           "widthName": 166.251953125,
           "widthComment": 60
         },
-        "visible": true,
-        "id": "a91b88be-96d0-4fe2-a487-ccb95f96edec"
+        "visible": true
       },
       {
+        "id": "919e6a7d-dd01-401d-ad83-ef3906502e67",
         "name": "TRANS_Room_Date_Pricing",
         "comment": "princing for each room transaction",
         "columns": [
           {
+            "id": "00a6e42d-7969-41fb-ada7-d4a6b3ecb2dc",
             "name": "trans_room_id",
             "comment": "",
-            "dataType": "INT",
+            "dataType": "uniqueidentifier",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -834,12 +859,12 @@
               "pfk": true,
               "widthName": 85.09716796875,
               "widthComment": 60,
-              "widthDataType": 60,
+              "widthDataType": 90.17529296875,
               "widthDefault": 60
-            },
-            "id": "00a6e42d-7969-41fb-ada7-d4a6b3ecb2dc"
+            }
           },
           {
+            "id": "36ef955c-1693-43d5-a40f-06dcd73345f0",
             "name": "line",
             "comment": "",
             "dataType": "INT",
@@ -859,10 +884,10 @@
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
-            },
-            "id": "36ef955c-1693-43d5-a40f-06dcd73345f0"
+            }
           },
           {
+            "id": "5ec894c3-d67b-4cf8-9530-3f79514f4e42",
             "name": "created_at",
             "comment": "",
             "dataType": "timestamp",
@@ -882,10 +907,10 @@
               "widthComment": 60,
               "widthDataType": 61.9599609375,
               "widthDefault": 60
-            },
-            "id": "5ec894c3-d67b-4cf8-9530-3f79514f4e42"
+            }
           },
           {
+            "id": "77b5cd0a-f7d3-40c9-b881-eaae8f8693c6",
             "name": "updated_at",
             "comment": "",
             "dataType": "timestamp",
@@ -905,13 +930,13 @@
               "widthComment": 60,
               "widthDataType": 61.9599609375,
               "widthDefault": 60
-            },
-            "id": "77b5cd0a-f7d3-40c9-b881-eaae8f8693c6"
+            }
           },
           {
+            "id": "2b27279b-a07e-4c3a-918c-254aabc32c40",
             "name": "room_price_id",
             "comment": "",
-            "dataType": "INT",
+            "dataType": "uniqueidentifier",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -926,22 +951,20 @@
               "pfk": false,
               "widthName": 84.37353515625,
               "widthComment": 60,
-              "widthDataType": 60,
+              "widthDataType": 90.17529296875,
               "widthDefault": 60
-            },
-            "id": "2b27279b-a07e-4c3a-918c-254aabc32c40"
+            }
           }
         ],
         "ui": {
           "active": false,
           "left": 1132.7782,
           "top": 548.3334,
-          "zIndex": 3,
+          "zIndex": 50,
           "widthName": 169.62255859375,
           "widthComment": 120
         },
-        "visible": true,
-        "id": "919e6a7d-dd01-401d-ad83-ef3906502e67"
+        "visible": true
       }
     ],
     "indexes": []
@@ -952,6 +975,7 @@
   "relationship": {
     "relationships": [
       {
+        "id": "4264349a-4728-468b-a720-9ab9322fb307",
         "identification": false,
         "relationshipType": "OneN",
         "startRelationshipType": "Dash",
@@ -974,10 +998,10 @@
           "direction": "left"
         },
         "constraintName": "fk_master_room_type_to_master_room",
-        "visible": false,
-        "id": "4264349a-4728-468b-a720-9ab9322fb307"
+        "visible": false
       },
       {
+        "id": "b4fc45b9-5227-40c3-b532-e9cddd15ca6c",
         "identification": false,
         "relationshipType": "OneN",
         "startRelationshipType": "Dash",
@@ -1000,10 +1024,10 @@
           "direction": "top"
         },
         "constraintName": "fk_master_room_to_trans_room",
-        "visible": false,
-        "id": "b4fc45b9-5227-40c3-b532-e9cddd15ca6c"
+        "visible": false
       },
       {
+        "id": "dadf35df-d607-492d-b3e4-1b12f4cd22ee",
         "identification": false,
         "relationshipType": "OneN",
         "startRelationshipType": "Dash",
@@ -1021,15 +1045,15 @@
           "columnIds": [
             "2ac0dcaf-195f-40d1-8b34-d943fab0d560"
           ],
-          "x": 974.5647421875,
-          "y": 567.1113,
+          "x": 1023.52705234375,
+          "y": 584.153,
           "direction": "right"
         },
         "constraintName": "fk_master_transaction_type_to_trans_room",
-        "visible": true,
-        "id": "dadf35df-d607-492d-b3e4-1b12f4cd22ee"
+        "visible": true
       },
       {
+        "id": "80a3f7b0-fb77-46cf-8548-51356ac1efcd",
         "identification": true,
         "relationshipType": "ZeroN",
         "startRelationshipType": "Dash",
@@ -1038,8 +1062,8 @@
           "columnIds": [
             "460db5d4-93ce-4aed-9f11-39e05ff862a7"
           ],
-          "x": 974.5647421875,
-          "y": 450.6113,
+          "x": 1023.52705234375,
+          "y": 457.403,
           "direction": "right"
         },
         "end": {
@@ -1052,10 +1076,10 @@
           "direction": "left"
         },
         "constraintName": "fk_trans_room_to_trans_room_date_pricing",
-        "visible": true,
-        "id": "80a3f7b0-fb77-46cf-8548-51356ac1efcd"
+        "visible": true
       },
       {
+        "id": "188a93d7-c1c9-4a0e-bb1f-559d5e962e01",
         "identification": false,
         "relationshipType": "OneN",
         "startRelationshipType": "Dash",
@@ -1064,8 +1088,8 @@
           "columnIds": [
             "1b4a71bf-3c3f-439c-91e8-41c5db32e7cf"
           ],
-          "x": 494.23683515625,
-          "y": 687.4052,
+          "x": 464.23733515625,
+          "y": 690.7384,
           "direction": "right"
         },
         "end": {
@@ -1078,10 +1102,10 @@
           "direction": "left"
         },
         "constraintName": "fk_master_room_pricing_to_trans_room_date_pricing",
-        "visible": true,
-        "id": "188a93d7-c1c9-4a0e-bb1f-559d5e962e01"
+        "visible": true
       },
       {
+        "id": "a7109f23-025f-4551-8ea9-3cc8773eefea",
         "identification": false,
         "relationshipType": "OneN",
         "startRelationshipType": "Dash",
@@ -1099,13 +1123,12 @@
           "columnIds": [
             "530d0c08-1296-4fe9-a655-2f32edab4471"
           ],
-          "x": 271.893817578125,
-          "y": 591.4052,
+          "x": 241.894317578125,
+          "y": 594.7384,
           "direction": "top"
         },
         "constraintName": "fk_master_room_type_to_master_room_pricing",
-        "visible": true,
-        "id": "a7109f23-025f-4551-8ea9-3cc8773eefea"
+        "visible": true
       }
     ]
   }
